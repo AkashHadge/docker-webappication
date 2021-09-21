@@ -15,7 +15,7 @@ app.put('/items/:id', updateItem);
 app.delete('/items/:id', deleteItem);
 
 db.init().then(() => {
-    app.listen(8081, () => console.log('Listening on port 8081'));
+    app.listen(8081, () => console.log('Listening on port 8080'));
 }).catch((err) => {
     console.error(err);
     process.exit(1);
